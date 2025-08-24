@@ -1,4 +1,4 @@
 export default async function handler(req, res) {
-  const { address } = req.body;
-  res.status(200).send('OK'); // Placeholder
+  const { address } = req.query;
+  res.json({ claimed: false }); // Placeholder
 }
